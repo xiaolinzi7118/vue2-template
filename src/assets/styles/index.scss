@@ -1,0 +1,133 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+@import '~element-ui/packages/theme-chalk/src/index';
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  line-height: 1.5;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  font-size: $fontSizeBase;
+  color: $colorTextPrimary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: $colorTextBase;
+}
+
+label {
+  font-weight: 700;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+  }
+}
+
+.flex {
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-auto {
+  flex: auto;
+  position: relative;
+  height: 100%;
+}
+
+.flex-auto-hidden {
+  @extend .flex-auto;
+  overflow: hidden;
+}
+
+.flex-none {
+  flex: none;
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.abs-full {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 1px;
+}
