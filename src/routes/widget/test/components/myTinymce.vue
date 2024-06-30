@@ -60,10 +60,10 @@ export default {
     return {
       // 初始化配置
       init: {
-        language_url: process.env.NODE_ENV === 'development' ? '/static/langs/zh_CN.js' : '/vue2-boot-template/static/langs/zh_CN.js', // 根据自己文件的位置，填写正确的路径。路径不对会报错
+        language_url: process.env.NODE_ENV === 'development' ? '/static/langs/zh_CN.js' : '/vue2-template/static/langs/zh_CN.js', // 根据自己文件的位置，填写正确的路径。路径不对会报错
         language: 'zh_CN',
-        skin_url: process.env.NODE_ENV === 'development' ? '/static/skins/ui/oxide' : '/vue2-boot-template/static/skins/ui/oxide', // 根据自己文件的位置，填写正确的路径。路径不对会报错
-        content_css: process.env.NODE_ENV === 'development' ? '/static/skins/content/default/content.css' : '/vue2-boot-template/static/skins/content/default/content.css',
+        skin_url: process.env.NODE_ENV === 'development' ? '/static/skins/ui/oxide' : '/vue2-template/static/skins/ui/oxide', // 根据自己文件的位置，填写正确的路径。路径不对会报错
+        content_css: process.env.NODE_ENV === 'development' ? '/static/skins/content/default/content.css' : '/vue2-template/static/skins/content/default/content.css',
         height: 300,
         // plugins: this.plugins,
         plugins: this.plugins,
