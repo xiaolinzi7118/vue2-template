@@ -23,6 +23,7 @@ import 'tinymce/plugins/contextmenu';
 import 'tinymce/plugins/wordcount';
 import 'tinymce/plugins/colorpicker';
 import 'tinymce/plugins/textcolor';
+import 'tinymce/icons/default/icons';
 export default {
   components: {
     Editor,
